@@ -13,7 +13,7 @@ def helper(treeA, treeB):
         return False
     else:
         return helper(treeA.left, treeB.left) and helper(treeA.right, treeB.right)
-    
+
 
 def HasSubtree(pRoot1, pRoot2):
     # write code here
