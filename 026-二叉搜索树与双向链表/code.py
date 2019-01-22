@@ -9,6 +9,7 @@ def Convert(pRootOfTree):
         while p:
             stack.append(p)
             p = p.left
+            
         p = stack.pop()
         if not pre:
             pre = p
