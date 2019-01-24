@@ -9,19 +9,19 @@
 #         n /= 5
 #     return n == 1
 
-# 2345
 def GetUglyNumber_Solution(index):
     # write code here
     if index <= 0: return 0
-    uglys = set([1, 2, 3, 4, 5])
+    if index == 1: return 1
+    uglys = {1}
     cnt = 0
     i = 0
-    while cnt < index:
+    while cnt < index-1:
         i += 1
-        if i==1 or i / 2 in uglys or i/3 in uglys or i/5 in uglys:
+        if i/2.0 in uglys or i/3.0 in uglys or i/5.0 in uglys:
             cnt += 1
             uglys.add(i)
-        
+
     return i
 
-print(GetUglyNumber_Solution(7))
+print(GetUglyNumber_Solution(700))
