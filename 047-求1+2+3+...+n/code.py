@@ -6,10 +6,9 @@ def sum(n):
         return 0
 
 
-
 class Solution:
     def Sum_Solution(self, n):
         return sum(n)
-    
+
 
 print(Solution().Sum_Solution(10))
