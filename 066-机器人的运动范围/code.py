@@ -34,4 +34,3 @@ class Solution:
         return DFS(array, 0, 0, threshold, visited)
 
 
-print(Solution().movingCount(5, 20, 20))
