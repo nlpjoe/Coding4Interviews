@@ -20,8 +20,9 @@ https://github.com/nlpjoe/Coding4Interviews
 
 笔者是NLP方向，这两篇相关方向的面经写得很不错：
 
->https://zhuanlan.zhihu.com/p/36387348
->https://zhuanlan.zhihu.com/p/45802662
+> https://zhuanlan.zhihu.com/p/36387348
+> 
+> https://zhuanlan.zhihu.com/p/45802662
 
 如果您是高分段选手，看完觉得不用刷题，请点(x)然后私信我，务必要收下我这个好朋友=￣ω￣=
 
@@ -127,7 +128,7 @@ https://github.com/nlpjoe/Coding4Interviews
 
 > 剑指offer->Leetcode动态规划->面试前再过一遍剑指offer
  
-每个人基础不一样，，不过我觉得刷题还是要全职专项的刷。
+每个人基础不一样，不过我觉得刷题还是要全职专项的刷。
 
 **有个重要的点是：每道题做完一定要去讨论区！**
 
@@ -141,19 +142,10 @@ https://github.com/nlpjoe/Coding4Interviews
 
 刷题我是和几个熟人一起刷的。如果您找不到地方，可以关注其他小伙伴们的公众号Datawhale(开源学习平台)，里面有Leetcode组队打卡刷题。
 
-目前笔者主要在刷题准备面试，如果有面试刷题的小伙伴，可以一起共享招聘信息&刷题交流=￣ω￣=
+如果有面试刷题(剑指offer+Leetcode)的小伙伴，可以一起共享招聘信息&刷题交流=￣ω￣=
 
 添加AI圈机器狗微信(Echoooo741)拉您入群。
 
-![](https://aigroupz-1258285787.cos.ap-shanghai.myqcloud.com/blog/15491034062379.jpg)
+![](https://aigroupz-1258285787.cos.ap-shanghai.myqcloud.com/blog/15491047309717.jpg)
 
-
-### TODO
-
-二叉树非递归遍历
-最大回文子串
-最大子串和
-最大方形数字和
-实现栈和队列
-编辑距离
 
