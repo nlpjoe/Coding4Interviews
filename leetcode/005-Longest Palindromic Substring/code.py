@@ -8,7 +8,7 @@ class Solution(object):
         n = len(s)
         for i in range(n):
             odd_s = self.palindromeAt(s, i, i)
-            even_s = self.palindromeAt(s, i, i+1)
+            even_s = self.palindromeAt(s, i-1, i)
             res = max(res, odd_s, even_s, key=len)
         return res
 
