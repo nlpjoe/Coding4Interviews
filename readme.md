@@ -18,7 +18,7 @@
 
 参与方式: 报名后添加管理员微信Echoooo741拉您进群。
 
-![](media/15499645056121/15499655486629.jpg)
+![](https://aigroupz-1258285787.cos.ap-shanghai.myqcloud.com/blog/15499655486629.jpg)
 
 
 
