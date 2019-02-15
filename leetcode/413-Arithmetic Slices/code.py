@@ -35,7 +35,21 @@ class Solution2(object):
             for row in col:
                 if row is not None: cnt += 1
         return cnt
-print(Solution2().numberOfArithmeticSlices([1, 1, 1, 1]))        
-print(Solution2().numberOfArithmeticSlices([1, 2, 3, 4]))
+
+class Solution3(object):
+    # from discuss
+    def numberOfArithmeticSlices(self, A):
+        n = len(A)
+        curr = 0
+        sum = 0
+        for i in range(2, n):
+            if A[i] - A[i-1] == A[i-1] - A[i-2]:
+                curr += 1
+                sum += curr
+            else:
+                curr = 0
+        return sum
+print(Solution3().numberOfArithmeticSlices([1, 1, 1, 1]))        
+print(Solution3().numberOfArithmeticSlices([1, 2, 3, 4]))
 
 
