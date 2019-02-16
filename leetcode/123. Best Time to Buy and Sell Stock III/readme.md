@@ -33,6 +33,11 @@ Explanation: In this case, no transaction is done, i.e. max profit = 0.
 
 ### 思路
 
+T[i][k][0] 表示在第i个位置完成k次交易后手上持0股。
+T[i][k][1] 表示在第i个位置完成k次交易后手上持1股。
+本题中k = 2
+在第i个位置有三种可能操作，买、卖、不动。故公式如下：
+
 ```
 T[i][0][0] = 0
 
