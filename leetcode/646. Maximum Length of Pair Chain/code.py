@@ -14,4 +14,19 @@ class Solution(object):
         return dp[n-1]
 
 
+class Solution1(object):
+    def findLongestChain(self, pairs):
+        """
+        :type pairs: List[List[int]]
+        :rtype: int
+        """
+        pairs.sort(key=lambda d:d[1])
+        res = 0
+        cur = float('-inf')
+        for p in pairs:
+            if cur < p[0]:
+                res += 1
+                cur = p[1]
+        return res
+
 print(Solution().findLongestChain([[2, 3],[1,2], [4, 5]]))
