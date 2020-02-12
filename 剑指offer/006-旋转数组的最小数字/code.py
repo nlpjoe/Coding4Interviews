@@ -8,5 +8,8 @@ class Solution(object):
             elif numbers[mid] < numbers[high]:
                 high = mid
             else:
-                high -= 1
+                if (numbers[high - 1] > numbers[high]):  # 确保正确的下标
+                    low = high
+                    break
+                high -= 1  # 如果numbers[hign-1]=numbers[high]的情况
         return numbers[low]
