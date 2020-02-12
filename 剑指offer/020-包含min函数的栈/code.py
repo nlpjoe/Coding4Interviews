@@ -1,4 +1,5 @@
-class Solution:
+class MinStack(object):
+
     def __init__(self):
         self.stack = []
         self.min_stack = []
@@ -20,8 +21,12 @@ class Solution:
     
     def top(self):
         # write code here
-        return self.stack.pop(-1)
+        if self.stack:
+            return self.stack[-1]
+        else:
+            return []
 
     def min(self):
         # write code here
         return self.min_stack[-1]
+        
