@@ -9,7 +9,7 @@
 找过工作的朋友应该都听说过《剑指offer》，笔者也是战5渣，本文主要对我这十多天刷过的《剑指offer》做个简单的分类小结，方便后面专项复(练)习~
 
 剑指offer推荐刷题地址：
-https://www.nowcoder.com/ta/coding-interviews
+https://leetcode-cn.com/problemset/lcof/ (官方授权)
 
 我的所有AC题解(Python语言)，每道题都写了点自己的思路：
 https://github.com/nlpjoe/Coding4Interviews
