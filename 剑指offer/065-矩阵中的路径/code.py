@@ -1,14 +1,14 @@
 # -*- coding:utf-8 -*-
-def BFS(matrix, row, col, path, visited):
+def DFS(matrix, row, col, path, visited):
     if row < 0 or row >= len(matrix) or col < 0 or col >= len(matrix[0]) or (row, col) in visited: 
         return False
     if path[0] == matrix[row][col]:
         if len(path) == 1:
             return True
-        return BFS(matrix, row+1, col, path[1:], visited| {(row, col)}) or \
-            BFS(matrix, row-1, col, path[1:], visited| {(row, col)}) or \
-            BFS(matrix, row, col-1, path[1:], visited| {(row, col)}) or \
-            BFS(matrix, row, col+1, path[1:], visited| {(row, col)})
+        return DFS(matrix, row+1, col, path[1:], visited| {(row, col)}) or \
+            DFS(matrix, row-1, col, path[1:], visited| {(row, col)}) or \
+            DFS(matrix, row, col-1, path[1:], visited| {(row, col)}) or \
+            DFS(matrix, row, col+1, path[1:], visited| {(row, col)})
 
 class Solution:
     def hasPath(self, matrix, rows, cols, path):
@@ -18,7 +18,7 @@ class Solution:
         for i in range(rows):
             for j in range(cols):
                 visited = set()
-                if BFS(array, i, j, list(path), visited): 
+                if DFS(array, i, j, list(path), visited): 
                     return True
         return False
 
