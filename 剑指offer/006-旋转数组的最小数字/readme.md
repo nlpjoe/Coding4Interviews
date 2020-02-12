@@ -3,6 +3,6 @@
 
 ### 思路
 总体二分：
-- if mid大于left, left = mid
-- if mid小于left, right = mid
-- 直到mid<mid-1位置的数
+- if mid大于high, low = mid - 1
+- if mid小于high, high = mid
+- 直到mid=high，取此位置的数
