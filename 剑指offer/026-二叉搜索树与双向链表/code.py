@@ -1,30 +1,27 @@
+# -*- coding:utf-8 -*-
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+class Solution:
+    def __init__(self):
+        self.pre = None
+        
+    def Convert(self, root):
+        # write code here
+        if not root: return None
+        self.helper(root)
+        while root.left:
+            root = root.left
+        return root
 
-def Convert(pRootOfTree):
-    if not pRootOfTree: return None
-    stack = []
-    p = pRootOfTree
-    new_h = None
-    pre = None
-    while p or stack:
-        while p:
-            stack.append(p)
-            p = p.left
-
-        p = stack.pop()
-        if not pre:
-            pre = p
-            new_h = p
-        else:
-            pre.right = p
-            p.left = pre
-            pre = p
-
-        p = p.right
-    return new_h
-
-
-def Convert(pRootOfTree):
-    if not pRootOfTree: return None
-    return new_h
-
-
+    def helper(self, cur):
+        if not cur: return None
+        self.helper(cur.left)
+        cur.left = self.pre
+        if self.pre:
+            self.pre.right = cur
+        self.pre = cur
+        self.helper(cur.right)
+        
